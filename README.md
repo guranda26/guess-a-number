@@ -4,7 +4,7 @@
 
 - **User enters a number between 1 and 100.**
 - **The game provides hints ("Number is too high" or "Number is too low") for invalid guesses.**
-- **A congratulation message appears when the user guesses the correct number, displaying the guess number.**
+- **A congratulation message appears when the user guesses the correct number, displaying the guess number and congratulation animation.**
 - **Screen shows how many attempts took the one round.**
 - **A "Try Again" button allows the user to restart the game (currently by reloading the page).**
 - **The style is responsive for any type of device**
