@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  background: linear-gradient(#ff7070, #b3b9f6);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  gap: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #361919;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.guess-btn {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #ff7070;
+  color: white;
+}
+.try-again-btn {
+  background-color: #813838;
+  width: 100px;
+  height: 70px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  border-radius: 25%;
+}
+
+.try-again-btn:hover {
+  background: none;
+
+  width: 120px;
+  border: 1px solid #d55a5a;
+  letter-spacing: 3px;
+  box-shadow: 0px 5px 40px -10px #00000091;
+  transition: all 0.8s ease-in-out 0s;
+}
+
+.guess-btn:hover {
+  background-color: #ff707098;
+}
+
+.disabled-btn {
+  background-color: #ff70705c;
+}
+
+.guessing-nums {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(200, 0, 0);
+}
+
+.hint-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hint-rext {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 5px;
+}
+
+.span-el {
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3e8e41;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 420px) {
+  .guessing-nums {
+    font-size: 20px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}

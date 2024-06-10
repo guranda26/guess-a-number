@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3b4f25d9d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess A Number</h1>
+      <h2>Choose between 1 and 100</h2>
+      <input type="number" min="1" max="100" id="numValue" />
+      <button id="guess" class="guess-btn">Guess</button>
+      <div class="hint-text">
+        <i
+          class="fas fa-exclamation-circle fa-lg"
+          style="color: #056dbd; display: none"
+          id="warning"
+        ></i>
+        <p id="hint" class="guessing-nums"></p>
+      </div>
+      <p id="attempt" class="guessing-nums"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
