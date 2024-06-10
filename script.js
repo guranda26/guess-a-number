@@ -13,21 +13,22 @@ function checkNumber() {
   attempts++;
 
   if (userValue > 100 || userValue < 1) {
-    hint.textContent = "Please enter a number between 1 and 100";
+    hint.textContent = "Number is between 1-100";
     warningIcon.style.display = "inline";
+    hint.classList.add("high-num");
     createTryAgainTbn();
-
     return;
+  } else {
+    hint.classList.remove("high-num");
   }
   warningIcon.style.display = "none";
 
   if (userValue === randomVal) {
     hint.textContent = "Congratulations!";
-    hint.classList.add("hint-rext");
-    const spanEl = document.createElement("span");
-    hint.append(spanEl);
+    hint.classList.add("congrat-text");
+    const spanEl = document.getElementById("span");
+
     spanEl.textContent = "You guessed the number " + randomVal;
-    spanEl.classList.add("span-el");
     guess.classList.add("disabled-btn");
     guess.disabled = true;
     createTryAgainTbn();
