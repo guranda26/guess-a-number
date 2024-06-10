@@ -1,7 +1,7 @@
 const guess = document.getElementById("guess");
 const hint = document.getElementById("hint");
 const attemptDisplay = document.getElementById("attempt");
-const randomVal = Math.floor(Math.random() * 10 + 1);
+const randomVal = Math.floor(Math.random() * 100 + 1);
 const numValue = document.getElementById("numValue");
 const warningIcon = document.getElementById("warning");
 
