@@ -9,7 +9,9 @@
 - **A "Try Again" button allows the user to restart the game (currently by reloading the page).**
 - **The style is responsive for any type of device**
 
-# Running the Game:
+## Deployment link(https://guess-a-number-guranda26s-projects.vercel.app/)
+
+## Running the Game:
 
 - Save the HTML, CSS, and JavaScript files in the same directory.
 - Open the HTML file in a web browser.
